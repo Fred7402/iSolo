@@ -1,6 +1,16 @@
-iSolo uses a 3 layer architecture to demonstrate a computer-based gamemaster for a nonspecific roleplaying game.
-The idea is that your computer manages a database of game states. Each game state corresponds to a turn for a particular character played by a specific player. You can also create a new player and character. The new character gets added to the database of manageable game states. The application examines each game state, and gives the user the opportunity to add two secrets to a generic game state thus making a unique game state. The computerized GM then randomizes character actions and their success. The computerized GM then filters the game state to produce a filtered game state that the player "can be" presented with. If there was a user interface for the player, that filtered game state would be rendered on that UI. The filtered game state represents what the player knows. The game state represents the truth. It is up to the computerized GM to keep track of both game states for each character turn. The filtered game state is created according to a set of rules devised by myself. These rules don't conform to a specific roleplaying game, but they are inspired by the Pathfinder roleplaying game. My favorite!!!
+# PROBLEM STATEMENT
+The solo RPG player has a unique set of pain points. The biggest pain point is that they cannot keep secrets from themselves. The player always knows things that their characters are not supposed to know. This fact spoils the fun and surprise of learning new information organically like players do with with a traditional tabletop roleplaying game where one person is the gamemaster and the other people are the players. This means that the solo player may have less fun than a traditional table of players.  
 
+iSolo is a concept that tries to address this pain point by allowing the computer to act as the Gamemaster. The computer will keep secrets from the solo player until or unless they discover them. This will help preserve the fun that traditional tabletop players enjoy.  
+
+# CONCEPT
+iSolo uses a 3 layer architecture to demonstrate a computer-based Gamemaster(GM) for a nonspecific roleplaying game. The idea is that your computer manages a database of game states. Each game state corresponds to a turn for a particular solo character played by a specific player. The user can also create a new player and character. The new character is appended to the database of manageable game states.  
+
+The application examines each game state in the prepopulated database, and gives the user the opportunity to add two secrets to each generic game state thus creating a unique game state. The computerized GM then randomizes character actions and their success. The computerized GM then filters that game state to produce a filtered game state that the player "can be" presented with.  
+
+If there was a user interface for the player, that filtered game state would be rendered on that UI. The filtered game state represents what the player knows. The game state represents the truth. It is up to the computerized GM to keep track of both game states for each character turn. The filtered game state is created according to a set of rules devised by myself. These rules don't conform to a specific roleplaying game, but they are inspired by the Pathfinder roleplaying game. My favorite!!!
+
+#  INSTRUCTIONS
 *run GUI.py to see the demonstration.
 *For best results, refresh the database each time you run the demonstration. You can refresh it by running states_of_games_DB.sql
 in workbench.
