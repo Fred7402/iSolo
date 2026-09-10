@@ -10,16 +10,25 @@ The application examines each game state in the prepopulated database, and gives
 
 If there was a user interface for the player, that filtered game state would be rendered on that UI. The filtered game state represents what the player knows. The game state represents the truth. It is up to the computerized GM to keep track of both game states for each character turn. The filtered game state is created according to a set of rules devised by myself. These rules don't conform to a specific roleplaying game, but they are inspired by the Pathfinder roleplaying game. My favorite!!!
 
-#  INSTRUCTIONS
-*run GUI.py to see the demonstration.
-*For best results, refresh the database each time you run the demonstration. You can refresh it by running states_of_games_DB.sql
-in workbench.
+# INSTRUCTIONS
+
+You should have MySQL workbench installed on your computer, and you should have a valid login and password for workbench.  
+
+You should also have python installed on your computer. This application is written in the python programming language.  
+
+Open states_of_games_DB.sql in workbench and execute it. This query will create the database, tables, views, functions, and stored procedures needed by the python application.  
+
+Go to a terminal, and navigate to the folder where the .py files, states_of_games_DB.sql, and requirements.txt files are stored. Type: `pip install -r requirements.txt` into the terminal and press enter. This will install external dependencies.  
+
+run GUI.py to see the demonstration.  
+
+*For best results, refresh the database each time you run the demonstration. You can refresh it by executing states_of_games_DB.sql from workbench.
 
 GUI = Graphical User Interface
 BLL = Business Logic Layer
 DAL = Data Access Layers
 
-PYTHON DEPENDENCIES: Internal and External
+# PYTHON DEPENDENCIES: Internal and External
 mysql.connector
 tkinter
 datetime
@@ -27,16 +36,7 @@ random
 decimal
 logging
 
-SETUP:
-Go to the command prompt and navigate to the folder where the application files are located on your computer.
-Use the requirements.txt file to install the dependencies by entering the following command: pip install -r requirements.txt
-
-RUNNING THE DEMONSTRATION:
-Run the following command at the command prompt within the folder where the application files are located: GUI.py
-You should have MySQL workbench installed on your computer, and you should have a valid login and password for workbench.
-You should also have python installed on your computer. This application is written in the python programming language.
-
-FILTERED GAME STATE RULES:
+# FILTERED GAME STATE RULES:
 
 All Game states have the following fields:
 
@@ -87,7 +87,3 @@ human-like. That adds immersion to the experience.
 The filter that creates the filtered game state from a game state is an advanced feature. I wanted to create such a filter because it is at the heart of creating a game that acts like a human gamemaster. The filter is implemented in both the GUI and the BLL. The logic of the filter is handled by the BLL. The GUI ensures that that the BLL has proper constraints to work with by limiting user inputs. My
 biggest takeaway from this experience is the observation of how quickly an application becomes complex during development. This
 perspective is very humbling, but helps cement software development limitations in the real world.
-
-
-
- 
