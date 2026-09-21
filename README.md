@@ -30,6 +30,7 @@ DAL = Data Access Layers
 
 # PYTHON DEPENDENCIES: Internal and External
 * mysql.connector
+* pdoc
 * tkinter
 * datetime
 * random
