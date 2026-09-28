@@ -30,7 +30,7 @@ DAL = Data Access Layers
 
 # VIEWING DOCUMENTATION:
 
-In the iSolo repository, the right side of the screen has a section called 'Deployments'. In that section click 
+In the iSolo repository, https://github.com/Fred7402/iSolo, the right side of the screen has a section called 'Deployments'. In that section, click 'github pages'. 
 
 # PYTHON DEPENDENCIES: Internal and External
 * mysql.connector
