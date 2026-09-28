@@ -28,6 +28,10 @@ GUI = Graphical User Interface
 BLL = Business Logic Layer
 DAL = Data Access Layers
 
+# VIEWING DOCUMENTATION:
+
+In the iSolo repository, the right side of the screen has a section called 'Deployments'. In that section click 
+
 # PYTHON DEPENDENCIES: Internal and External
 * mysql.connector
 * pdoc
